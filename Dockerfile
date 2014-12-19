@@ -16,6 +16,6 @@ VOLUME ["/opt/warda/conf/environments"]
 
 ENV DATA_ARCHIVE /data/warda-industries-data.tar.gz
 
-ADD https://s3.eu-central-1.amazonaws.com/warda-docker/warda-industries-data-20141219.tar.gz $DATA_ARCHIVE
+ADD https://s3.eu-central-1.amazonaws.com/warda-docker/warda-industries-data-20141219-a.tar.gz $DATA_ARCHIVE
 
 CMD tar xzvf $DATA_ARCHIVE && tail -f /dev/null
